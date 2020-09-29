@@ -1,0 +1,46 @@
+Git-Github Review 1. Ders
+Git    : Bir versiyon kontrol aracıdır. Yaptığımız değişiklikleri satır satır kaydeden bir araçtır. Git bilgisayarımızda(local) kayıt yapar.
+	Örnek : Selamlar.java dosyasının 10. satırını değiştirdirdiğimi düşünelim.
+	git : sen bu versiyonda Selamlar.java dosyasının 10. satırını değiştirdin.
+Github : Git ile bilgisayarımıza(locale) kaydettiğimiz projeyi, uzak sunucularda(remote) saklamamıza yarayan bir araç. Git üzerindeki tüm verileri, uzak sunucuda görebilriz.
+	git üzerindeki tüm değişiklik geçmişini, yani projemizdeki yaptığımız tüm işlemleri, satır satır uzak sunucuya da kaydedebiliyoruz.
+Github'ın faydaları nelerdir ?
+ 	* bilgi güvenliği.
+ 	* paylaşılabilme özelliği (ortak erişim)
+ 	* projeleri birleştirebilme.
+ 	* geriye dönebilme (backup)
+ 	*** bilgisayara gerek duymadan, uzaktan kodlarınızı çalıştırabiliyorsunuz. (github sunucuları üzerinde..)
+Git ile alakalı bazı basit komutlar : 
+add -> commit -> push (githuba göndermek için)""
+fetch -> merge -> pull (githubtan almak için)
+---------------------------Bazı Basit Komutlar (cmd)--------------------
+cd         -> klasör değiştirmek için. (cd klasorunuzIsmi YA DA adresi)
+cd ..      -> bir üst klasöre geçmek için. (cd ..)
+pwd        -> bulunduğunuz klasörün adresini almak için..
+dir        -> bulunduğunuz klasördeki dosyaları ayrıntısıyla gösteriyor.
+ls         -> bulunduğunuz klasördeki dosyaları listeliyor.
+cls        -> cmd ekranını temizliyor.
+wq         -> cmd ekranında takılma olursa, bu komut ile yeni satıra geçebilirsiniz.
+***** bunlar GIT ile alakalı komutlar değil. Bu komutları günlük hayatınızda da kullanabilirsiniz. Öncesine GIT yazmıyoruz !!!!!
+-------------------------LOCAL REPOSITORY KOMUTLARI------------------------
+***** İLK ÖNCE LOCAL REPOSITORY oluşturmak istediğiniz klasörün içerisine cmd ekranında "cd klasorAdresi" kullanarak gitmeniz gerekiyor.
+1 - git init   -> local repository oluşturmak için..
+				  (her proje için sadece 1 kez kullanıyoruz.)
+2 - git add    -> dosyaları staging area'ya eklemek için..
+3 - git commit -> dosyalarımıza kimlik(commit) kazandırıyoruz.
+				  Yani yeni bir version oluşturup, local repository'e ekliyoruz.
+* git status   -> git'in şuanda hangi aşamada olduğunu bize bildirir.
+* git log      -> yapılan değişikliklerin, işlemlerin kaydını gösterir.
+
+
+* git show     -> istediğiniz commitin id'sinin ilk 5 hanesini yazarak, o commit ile ilgili detayları görebiliyorsunuz
+-------------------------REMOTE REPOSITORY KOMUTLARI-----------------------
+4 - git push   -> local repository'yi remote repository'e taşıyoruz.
+5 - git fetch  -> remote repository'deki (github) verileri locale alıyoruz.
+6 - git merge  -> herhangi bir çakışma varsa ona bakacağız. (conflict)
+7 - git pull   -> aldığımız verileri, projemize(çalışma alanımıza) alıyoruz
+----------------------------CONFLICT OLUSMASI ICIN-------------------------
+***** Local repository ve Remote Repository'deki version(commit) sayısı aynı olmalı !!!!!!
+***** Son versiyonun üzerine EĞER GİTHUB'da bir değişiklik yapılmışsa
+***** Son versiyonun üzerine EĞER LOCAL'de  bir değişiklik yapılmışsa
+işte o zaman conflict olabilir.
