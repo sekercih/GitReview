@@ -11,6 +11,7 @@ public static void main(String[] args) {
 	System.out.println("Saat 19:07-conflict");
 	System.out.println("master");
 	System.out.println("saat 18:12");
+	System.out.println("master branch 18:39");
 
 }
 }
